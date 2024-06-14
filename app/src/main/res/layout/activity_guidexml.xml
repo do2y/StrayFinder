@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="유기동물 발견 시 올바른 대처법"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. 유기동물 판단"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="유기동물을 발견했을 때, 우선 동물을 잠시 지켜보며 유기동물이 맞는지 판단해야합니다. 반려인이 바로 근처에 있을 수도 있고 도심에서는 흔하지 않지만 강아지가 스스로 집을 드나들며 동네를 자유롭게 누비는 경우도 있습니다.\n목줄이나 사람에게 관리받은 흔적이 있는지 확인해주세요."
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. 구조"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="유기동물이 공격성을 띠고 있을 수 있기 때문에 섣불리 다가가지 마시고 접근할 수 없다면 120번(민원 사항)으로 연결하여 구조를 요청하세요. 가까이 접근할 수 있다면 목줄나 인식표에 보호자의 정보가 있는지 확인해주시고, 가능하다면 근처 동물병원에 데려가 동물 인식 마이크로칩을 확인해주세요.\n이때 보호자가 애타게 찾고 있을 수 있기 때문에 발견한 장소에서 크게 벗어나지 않은 근처 동물 병원을 방문하는 것이 좋습니다."
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. 동물 보호소에 연락"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="만약 동물 등록이 되지 않은 유기동물이라면 가까운 동물 보호소에 연락하여 유기동물의 위치와 상태를 알려주세요."
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. 임시 보호"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="동물 보호소에 연락하기 전에 유기동물을 안전하게 임시 보호할 수 있다면, 임시로 보호소에 데려가기 전에 보호해주세요."
+                android:layout_marginBottom="16dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="유기동물의 주인을 찾기 위해 많은 사람들이 볼 수 있도록 StrayFinder에 목격 제보글을 올려주시고 실종신고 글을 주기적으로 확인해주세요."
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btn_goToShelterList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="보호소 리스트로" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
