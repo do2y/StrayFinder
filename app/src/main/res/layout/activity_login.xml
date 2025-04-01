@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="264dp"
+        android:layout_height="122dp"
+        android:text="StrayFinder"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.228" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="110dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round_button"
+        android:gravity="center"
+        android:text="회원가입"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_pw"
+        app:layout_constraintVertical_bias="0.018" />
+
+    <Button
+        android:id="@+id/btn_admin"
+        android:layout_width="110dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/round_button"
+        android:gravity="center"
+        android:text="관리자 로그인"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_register"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="124dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/round_button"
+        android:gravity="center"
+        android:text="로그인"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/et_email"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="109dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="148dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_pw" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="194dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="172dp"
+        android:gravity="center_vertical"
+        android:hint="이메일을 입력하세요"
+        android:inputType="textEmailAddress"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <EditText
+        android:id="@+id/et_pw"
+        android:layout_width="192dp"
+        android:layout_height="51dp"
+        android:hint="비밀번호를 입력하세요"
+        android:inputType="textPassword"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.196"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.519" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

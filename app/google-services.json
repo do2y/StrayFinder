@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "380455728448",
+    "firebase_url": "https://leesohiii-default-rtdb.firebaseio.com",
+    "project_id": "leesohiii",
+    "storage_bucket": "leesohiii.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380455728448:android:ed02cb081617cd087236a5",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBw3lfEmKYzTiXYkxk76HgWh46MA3ycxx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

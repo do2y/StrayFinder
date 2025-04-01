@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchor="@+id/constraintLayout"
+        app:layout_anchorGravity="center">
+
+        <TextView
+            android:id="@+id/tv_title2"
+            android:layout_width="171dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="96dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="오늘의 유기동물 통계"
+            android:textColor="#464E71"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/statistics_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+        <LinearLayout
+            android:id="@+id/statistics_layout"
+            android:layout_width="247dp"
+            android:layout_height="179dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title2">
+
+            <TextView
+                android:id="@+id/tv_info"
+                android:layout_width="247dp"
+                android:layout_height="179dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_button"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="입양률 18.5% \n안락사율 14.9%"
+                android:textColor="#5D6385"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_goToSearch"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_button"
+            android:gravity="center"
+            android:text="🔎   글 검색하러 가기   >>"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/statistics_layout" />
+
+        <Button
+            android:id="@+id/btn_goToPost"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_button"
+            android:gravity="center"
+            android:text="✏   글 작성하러 가기   >>"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_goToSearch" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:gravity="center"
+            android:text="Home 🏠"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_goToMypage"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_button"
+            android:gravity="center"
+            android:text="     마이페이지     >>"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_goToPost"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btn_goToNotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="공지"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_goToShelterInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="86dp"
+            android:text="보호소"
+            app:layout_constraintBottom_toTopOf="@+id/statistics_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="64dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="138dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/pet"
+            app:layout_constraintBottom_toTopOf="@+id/statistics_layout"
+            app:layout_constraintEnd_toStartOf="@+id/tv_title2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
